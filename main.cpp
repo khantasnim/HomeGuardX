@@ -198,7 +198,7 @@ int main()
     while(true)
     {
         cout<<"\n-*-*-*-*-*-*-*-*-*-*-\n";
-        cout<<"  HomeGaurdX \n";
+        cout<<"  HomeGuardX \n";
         cout<<"-*-*-*-*-*-*-*-*-*-*-\n";
         cout<<"1. Gas Leak Alert\n";
         cout<<"2. Electrical Alert\n";
