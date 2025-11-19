@@ -181,7 +181,7 @@ void needHelp()
 
 void showContacts()
 {
-    cout<<"\n===== EMERGENCY CONTACTS =====\n";
+    cout<<"\n*** EMERGENCY CONTACTS ***\n";
     cout<<"999  - Police / Fire / Ambulance\n";
     cout<<"102  - Fire Service\n";
     cout<<"16263 - Health Care\n";
@@ -197,9 +197,9 @@ int main()
 
     while(true)
     {
-        cout<<"\n=============================\n";
+        cout<<"\n-*-*-*-*-*-*-*-*-*-*-\n";
         cout<<"  HomeGaurdX \n";
-        cout<<"=============================\n";
+        cout<<"-*-*-*-*-*-*-*-*-*-*-\n";
         cout<<"1. Gas Leak Alert\n";
         cout<<"2. Electrical Alert\n";
         cout<<"3. Fire Alert\n";
@@ -217,7 +217,6 @@ int main()
         cin>>ch;
 
         if(ch==13) break;
-
         string type="";
 
         if(ch==1) type="Gas Leak Alert";
@@ -238,8 +237,7 @@ int main()
             h.score = score;
             h.tips = getTips(type, score);
             record.push_back(h);
-
-            cout<<"\nRisk Score: "<<score<<"\n";
+           cout<<"\nRisk Score: "<<score<<"\n";
             cout<<"Tips: "<<h.tips<<"\n";
 
             if(score >= 60){
@@ -263,6 +261,5 @@ int main()
         }
         else cout<<"Invalid choice.\n";
     }
-
-    return 0;
+   return 0;
 }
